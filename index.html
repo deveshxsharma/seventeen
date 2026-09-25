@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7eeee">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Seventeen</title>
+  <meta name="description" content="Seventeen · 27 September 2026 · Made by Devesh">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='10' fill='%23f7e9e9'/%3E%3Cpath d='M22 7A10 10 0 1 0 25 23A11 11 0 0 1 22 7' fill='%23546886'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="lounge-v4.webp">
+</head>
+<body>
+  <main id="world" inert>
+    <header><div class="controls">
+      <button id="hints" type="button" aria-pressed="false">Hints</button>
+      <button id="sound" type="button" aria-pressed="true">Sound on</button>
+    </div></header>
+    <section class="room-heading">
+      <p class="eyebrow">27 SEPTEMBER 2026</p>
+      <h1>Explore a little part of your house in countryside Italy!</h1>
+    </section>
+    <div class="viewport" id="viewport" tabindex="0" aria-label="Interactive room. Scroll horizontally to explore on a small screen.">
+      <div class="scene dimmed awaiting-lamp" id="scene">
+        <img id="room" src="lounge-v4.webp" width="1536" height="1024" alt="A pink countryside lounge with a mountain view, full moon, Shankri, a black horse, a resting husky, a camera and photographs, a journal, lilies, ice cream, instruments and a telescope.">
+        <div class="moonlight" aria-hidden="true"></div>
+        <canvas id="rain" aria-hidden="true"></canvas>
+        <div class="room-dimmer" aria-hidden="true"></div>
+        <div id="hotspots"></div>
+        <div class="lamp-prompt" id="lampPrompt" role="status" hidden>Turn on the lamp to see what’s here.</div>
+        <div class="drawer-prompt" id="drawerPrompt" role="status" hidden>Something's here.</div>
+      </div>
+    </div>
+    <footer><p>You're 6209 days old. Damn.</p></footer>
+  </main>
+  <section id="intro" aria-label="Welcome to Seventeen">
+    <span class="eyebrow">27 SEPTEMBER 2026</span>
+    <h2>seventeen</h2>
+    <button id="enter" type="button">continue <span aria-hidden="true">↗</span></button>
+    <span class="intro-note">Made by Devesh</span>
+  </section>
+  <dialog id="detail"><button class="close" type="button" aria-label="Close popup">×</button><div id="detailBody"></div></dialog>
+  <div id="toast" role="status"></div>
+  <audio id="birthdayMusic" src="audio/birthday.mp3" preload="auto" loop></audio>
+  <script src="content.js"></script>
+  <script src="audio.js"></script>
+  <script src="gallery.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
